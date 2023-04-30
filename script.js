@@ -44,7 +44,7 @@ function writePassword() {
       result = alert('You want lowercase characters.')
       console.log('You want lowercase characters.')
     }
-    
+
   else if (lowercaseMessage === 'n') {
       result = alert('You do not want lowercase characters.')
       console.log('You do not want lowercase characters.')
@@ -128,6 +128,8 @@ function writePassword() {
   if (lowercaseMessage === 'y' && uppercaseMessage === 'y' && numericMessage === 'y' && specialMessage === 'y')
   {
     const passwordArray = arrLowercase.concat(arrUppercase,arrNumeric,arrSpecial);
+    result = alert('You have chosen lowercase, uppercase, numeric, and special characters.')
+    console.log('You have chosen lowercase, uppercase, numeric, and special characters.')
     console.log(passwordArray)
     return passwordArray
   }
@@ -135,6 +137,8 @@ function writePassword() {
   else if (lowercaseMessage === 'y' && uppercaseMessage === 'y' && numericMessage === 'y' && specialMessage !== 'y')
   {
     const passwordArray = arrLowercase.concat(arrUppercase,arrNumeric);
+    result = alert('You have chosen lowercase, uppercase,  and numeric characters.')
+    console.log('You have chosen lowercase, uppercase, and numeric characters.')
     console.log(passwordArray)
     return passwordArray
   }
@@ -142,6 +146,8 @@ function writePassword() {
   else if (lowercaseMessage === 'y' && uppercaseMessage === 'y' && numericMessage !== 'y' && specialMessage === 'y')
   {
     const passwordArray = arrLowercase.concat(arrUppercase,arrSpecial);
+    result = alert('You have chosen lowercase, uppercase, and special characters.')
+    console.log('You have chosen lowercase, uppercase, and special characters.')
     console.log(passwordArray)
     return passwordArray
   }  
@@ -149,6 +155,8 @@ function writePassword() {
   else if (lowercaseMessage === 'y' && uppercaseMessage !== 'y' && numericMessage === 'y' && specialMessage === 'y')
   {
     const passwordArray = arrLowercase.concat(arrNumeric,arrSpecial);
+    result = alert('You have chosen lowercase, numeric, and special characters.')
+    console.log('You have chosen lowercase, numeric, and special characters.')
     console.log(passwordArray)
     return passwordArray
   }  
@@ -157,6 +165,8 @@ function writePassword() {
   else if (lowercaseMessage !== 'y' && uppercaseMessage === 'y' && numericMessage === 'y' && specialMessage === 'y')
   {
     const passwordArray = arrUppercase.concat(arrNumeric,arrSpecial);
+    result = alert('You have chosen uppercase, numeric, and special characters.')
+    console.log('You have chosen uppercase, numeric, and special characters.')
     console.log(passwordArray)
     return passwordArray
   }  
@@ -165,6 +175,8 @@ function writePassword() {
   else if(lowercaseMessage === 'y' && uppercaseMessage === 'y' && numericMessage !== 'y' && specialMessage !== 'y')
   {
     const passwordArray = arrLowercase.concat(arrUppercase);
+    result = alert('You have chosen lowercase and uppercase characters.')
+    console.log('You have chosen lowercase and uppercase characters.')
     console.log(passwordArray)
     return passwordArray
   }
@@ -173,6 +185,8 @@ function writePassword() {
   else if(lowercaseMessage === 'y' && uppercaseMessage !== 'y' && numericMessage === 'y' && specialMessage !== 'y')
   {
     const passwordArray = arrLowercase.concat(arrNumeric);
+    result = alert('You have chosen lowercase and numeric characters.')
+    console.log('You have chosen lowercase and numeric characters.')
     console.log(passwordArray)
     return passwordArray
   }
@@ -181,6 +195,8 @@ function writePassword() {
   else if(lowercaseMessage === 'y' && uppercaseMessage !== 'y' && numericMessage !== 'y' && specialMessage === 'y')
   {
     const passwordArray = arrLowercase.concat(arrSpecial);
+    result = alert('You have chosen lowercase and special characters.')
+    console.log('You have chosen lowercase and special characters.')
     console.log(passwordArray)
     return passwordArray
     
@@ -190,6 +206,8 @@ function writePassword() {
   else if(lowercaseMessage !== 'y' && uppercaseMessage === 'y' && numericMessage === 'y' && specialMessage !== 'y')
   {
     const passwordArray = arrUppercase.concat(arrNumeric);
+    result = alert('You have chosen uppercase and numeric characters.')
+    console.log('You have chosen uppercase and numeric characters.')
     console.log(passwordArray)
     return passwordArray
     
@@ -199,6 +217,8 @@ function writePassword() {
   else if(lowercaseMessage !== 'y' && uppercaseMessage === 'y' && numericMessage !== 'y' && specialMessage === 'y')
   {
     const passwordArray = arrUppercase.concat(arrSpecial);
+    result = alert('You have chosen uppercase and special characters.')
+    console.log('You have chosen uppercase and special characters.')
     console.log(passwordArray)
     return passwordArray
     
@@ -208,6 +228,8 @@ function writePassword() {
   else if(lowercaseMessage !== 'y' && uppercaseMessage !== 'y' && numericMessage === 'y' && specialMessage === 'y')
   {
     const passwordArray = arrNumeric.concat(arrSpecial);
+    result = alert('You have chosen numeric and special characters.')
+    console.log('You have chosen numeric and special characters.')
     console.log(passwordArray)
     return passwordArray
     
@@ -215,7 +237,7 @@ function writePassword() {
 
   // 1
   else if(lowercaseMessage === 'y' && uppercaseMessage !== 'y' && numericMessage !== 'y' && specialMessage !== 'y') {
-    result = alert('You may want to choose more than one type of symbol for your password.')
+    result = alert('You have chosen lowecase characters. You may want to choose more than one type of symbol for your password.')
     const passwordArray = arrLowercase
     console.log(passwordArray)
     return passwordArray
@@ -223,7 +245,7 @@ function writePassword() {
 
   // 2
   else if(lowercaseMessage !== 'y' && uppercaseMessage === 'y' && numericMessage !== 'y' && specialMessage !== 'y') {
-    result = alert('You may want to choose more than one type of symbol for your password.')
+    result = alert('You have chosen uppercase characters. You may want to choose more than one type of symbol for your password.')
     const passwordArray = arrUppercase
     console.log(passwordArray)
     return passwordArray
@@ -231,7 +253,7 @@ function writePassword() {
 
   // 3
   else if(lowercaseMessage !== 'y' && uppercaseMessage !== 'y' && numericMessage === 'y' && specialMessage !== 'y') {
-    result = alert('You may want to choose more than one type of symbol for your password.')
+    result = alert('You have chosen numeric characters. You may want to choose more than one type of symbol for your password.')
     const passwordArray = arrNumeric
     console.log(passwordArray)
     return passwordArray
@@ -239,7 +261,7 @@ function writePassword() {
 
   // 4
   else if(lowercaseMessage !== 'y' && uppercaseMessage !== 'y' && numericMessage !== 'y' && specialMessage === 'y') {
-    result = alert('You may want to choose more than one type of symbol for your password.')
+    result = alert('You have chosen special characters. You may want to choose more than one type of symbol for your password.')
     const passwordArray = arrSpecial
     console.log(passwordArray)
     return passwordArray
