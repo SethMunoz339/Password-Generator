@@ -235,45 +235,66 @@ function writePassword() {
     
   }
 
-  // 1
+  // 1 works
   else if(lowercaseMessage === 'y' && uppercaseMessage !== 'y' && numericMessage !== 'y' && specialMessage !== 'y') {
     result = alert('You have chosen lowecase characters. You may want to choose more than one type of symbol for your password.')
+    console.log('You have chosen lowecase characters. You may want to choose more than one type of symbol for your password.')
     const passwordArray = arrLowercase
     console.log(passwordArray)
     return passwordArray
   }
 
-  // 2
+  // 2 works
   else if(lowercaseMessage !== 'y' && uppercaseMessage === 'y' && numericMessage !== 'y' && specialMessage !== 'y') {
     result = alert('You have chosen uppercase characters. You may want to choose more than one type of symbol for your password.')
+    console.log('You have chosen uppercase characters. You may want to choose more than one type of symbol for your password.')
     const passwordArray = arrUppercase
     console.log(passwordArray)
     return passwordArray
   }
 
-  // 3
+  // 3 works
   else if(lowercaseMessage !== 'y' && uppercaseMessage !== 'y' && numericMessage === 'y' && specialMessage !== 'y') {
     result = alert('You have chosen numeric characters. You may want to choose more than one type of symbol for your password.')
+    console.log('You have chosen numeric characters. You may want to choose more than one type of symbol for your password.')
     const passwordArray = arrNumeric
     console.log(passwordArray)
     return passwordArray
   }
 
-  // 4
+  // 4 works
   else if(lowercaseMessage !== 'y' && uppercaseMessage !== 'y' && numericMessage !== 'y' && specialMessage === 'y') {
     result = alert('You have chosen special characters. You may want to choose more than one type of symbol for your password.')
+    console.log('You have chosen special characters. You may want to choose more than one type of symbol for your password.')
     const passwordArray = arrSpecial
     console.log(passwordArray)
     return passwordArray
   }
 
-  // invalid response or none chosen
+  // invalid response or none chosen works
   else if(lowercaseMessage !== 'y' && uppercaseMessage !== 'y' && numericMessage !== 'y' && specialMessage !== 'y') {
     result = alert('Either you entered an invalid response, or you did not choose any symbols for your password. Please try again.')
     writePassword();
     return
   }
   
+
+  const chooseRandom = (passwordArray, num = 1) => {
+    const password = [];
+    for(let i = 0; i < num; ){
+       const random = Math.floor(Math.random() * passwordArray.length);
+       if(password.indexOf(passwordArray[random]) !== -1){
+          continue;
+       };
+       password.push(passwordArray[random]);
+       i++;
+    };
+    return password;
+ };
+ console.log(chooseRandom(passwordArray, lengthMessage));
+  // var passwordLog = passwordArray[Math.floor(Math.random()*passwordArray.length)];
+  // console.log(passwordLog)
+  // return passwordLog
 
   
 
