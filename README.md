@@ -14,7 +14,7 @@ To generate a password, click the red button and follow the prompts in the pop-u
 
 ## Screenshot
 
-[Screenshot of Website](https://github.com/SethMunoz339/portfolio/blob/main/Screenshot-portfolio.png?raw=true)
+[Screenshot of Website](https://github.com/SethMunoz339/Password-Generator/blob/main/password-screenshot.png?raw=true)
 
 ## URL
 
