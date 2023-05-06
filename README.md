@@ -18,7 +18,7 @@ To generate a password, click the red button and follow the prompts in the pop-u
 
 ## URL
 
-[Link to Website](https://sethmunoz339.github.io/portfolio/)
+[Link to Website](https://sethmunoz339.github.io/Password-Generator/)
 ## Credits
 
 N/A
